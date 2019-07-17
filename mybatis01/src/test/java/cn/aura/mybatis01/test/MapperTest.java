@@ -57,7 +57,7 @@ public class MapperTest {
 		SqlSessionFactory ssf = new SqlSessionFactoryBuilder().build(reader);
 		SqlSession session = ssf.openSession(true);
 		BookMapper mapper = session.getMapper(BookMapper.class);
-		Book book=new Book("西厢","不知道",54.30);
+		Book book=new Book("西厢","鬼知道",54.30);
 		int b = mapper.insert(book);
 		System.out.println(b);
 		session.close();
